@@ -51,5 +51,8 @@ print(“Nothing”)
 
 ## References
 - Tysm for the CTF write-up template https://ctf7.com/learn/how-to-write-a-ctf-writeup/
+- You can check for my own write-up on Google Docs here = https://docs.google.com/document/d/1fhL6uZjZ8NXTp11x0sS4kO2hALMt-08Eu_S1Gd1TE7o/edit?usp=sharing
+
+
 
 
