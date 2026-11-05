@@ -72,3 +72,4 @@ else:
 ## References
 - NO AI & NO GOOGLING REAL
 - Tysm for the template and guide from (https://ctf7.com/learn/how-to-write-a-ctf-writeup/#portfolio) for writing this write-up.
+- You can check for my Google Docs write-up = https://docs.google.com/document/d/1RmouX6inuUvX52Lsf3eEUn1dRu85y387BdKhdM5cP3Q/edit?usp=sharing
