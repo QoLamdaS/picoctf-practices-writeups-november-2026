@@ -1,4 +1,4 @@
-# CyLab Security Academy (formerly picoCTF) | Write-ups & Practices
+# CyLab Security Academy (formerly picoCTF) | Write-ups & Practices as of November 2026
 
 Welcome to my repository dedicated to cybersecurity write-ups completed as part of the **CyLab Security Academy** curriculum. This repository will hopefully serve as a portfolio documenting my hands-on learning, technical skill growth, and analytical problem-solving journey in CTFs or cybersecurity.
 
