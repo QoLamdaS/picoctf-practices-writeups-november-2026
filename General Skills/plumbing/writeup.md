@@ -1,5 +1,5 @@
 # plumbing (General Skills, Medium): picoCTF 2019
-🇬🇧English🇬🇧
+
 | Field      | Value |
 |------------|-------|
 | Event      | picoCTF, 2019 |
