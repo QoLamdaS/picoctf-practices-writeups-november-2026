@@ -1,58 +1,74 @@
-# {Challenge name} ({Category}, {points} pts): {Event name} {year}
+# fixme2.py (General Skills, Easy): Beginner picoMini 2022
 
 | Field      | Value |
 |------------|-------|
-| Event      | {Event name and edition}, {date range} |
-| Category   | {web / crypto / pwn / reverse / forensics / OSINT / misc} |
-| Points     | {final points} ({static / dynamic}) |
-| Solves     | {number, if published} |
-| Author     | {challenge author, if credited} |
-| Solved by  | {your handle} ({team name}) |
-| Status     | {Solved during event / Upsolved after event} |
+| Event      | Beginner picoMini 2022 (CyLab Security Academy) |
+| Category   | General Skills |
+| Points     | None |
+| Solves     | 71,097 |
+| Author     | LT 'syreal' Jones |
+| Solved by  | Myself solo |
+| Status     | Solved |
 
 ## TL;DR
-{One or two sentences: the bug class or trick, and the key insight.}
+Fix the given Python code error by adding “==”. Keep an eye on proper Python syntax.
 
 ## Challenge
-> {Paste the challenge description exactly as given.}
-
-- Files: `{filename}` (sha256: `{hash}`)
-- Service: `{chal.example.lab:port}` (event infrastructure, now offline)
+![alt text]({9185412F-0B0B-45B5-B5FF-0F22F605D360}.png)
+![alt text]({6F972EC8-9905-4F99-97C1-CB237BD750A8}.png)
+- Files: `fixme2.py` 
+- Service: `https://learn.cylabacademy.org/learning-paths/15/110` (CyLab Security Academy website)
 
 ## First look
-{What you checked first and why. Paste key output as text, trimmed.}
-
+![alt text]({F0B6FFC3-8C42-472C-B663-8CAC199C1F8D}.png)
 ```
-{command}
-{trimmed output}
+None
 ```
 
 ## Dead ends
-- {Idea}: {what happened} -> {why it didn't work}
-- {Idea}: {what happened} -> {why it didn't work}
+- None
 
 ## Solution
-### Step 1: {what this step achieves}
-{Why you took this step, what you expected, what you saw.}
+### Step 1:
+I open VS Code for the given Python file directly. I inspect the “typo” in the Python code.
 
-### Step 2: {what this step achieves}
-{Reasoning first, then the minimum command or code.}
+### Step 2: 
+Correct the “typo” to proper Python syntax. Then run the corrected Python file.
 
-```{language}
-# solve script: minimal, commented, no hardcoded secrets
-{code}
+```{python}
+# solve script: N/A
+def str_xor(secret, key):
+    #extend key to secret length
+    new_key = key
+    i = 0
+    while len(new_key) < len(secret):
+        new_key = new_key + key[i]
+        i = (i + 1) % len(key)        
+    return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c,new_key_c) in zip(secret,new_key)])
+
+
+flag_enc = chr(0x04) + chr(0x0d) + chr(0x0a) + chr(0x0d) + chr(0x01) + chr(0x18) + chr(0x1c) + chr(0x15) + chr(0x58) + chr(0x18) + chr(0x11) + chr(0x41) + chr(0x09) + chr(0x5f) + chr(0x1f) + chr(0x10) + chr(0x3b) + chr(0x1b) + chr(0x55) + chr(0x1a) + chr(0x34) + chr(0x5d) + chr(0x51) + chr(0x40) + chr(0x54) + chr(0x09) + chr(0x05) + chr(0x04) + chr(0x57) + chr(0x1b) + chr(0x11) + chr(0x31) + chr(0x5c) + chr(0x0d) + chr(0x06) + chr(0x11) + chr(0x5d) + chr(0x5b) + chr(0x5e) + chr(0x0f) + chr(0x19)
+
+
+flag = str_xor(flag_enc, 'enkidu')
+
+
+# Check that flag is not empty
+if flag == "":
+    print('String XOR encountered a problem, quitting.')
+else:
+    print('That is correct! Here\'s your flag: ' + flag)
+
 ```
-
-![{Describe what the screenshot shows}](img/{file}.png)
+![alt text]({DDEA851C-493F-475C-8487-44B6F1E46204}.png)
 
 ## Flag
-`CTF7{...}`  {or: "Omitted at the organizer's request."}
+`academy{3qu4l1ty_n0t_4551gnm3nt_7dbd855f}` 
 
 ## Lessons learned
-- {What you'd check first next time}
-- {Tool or technique you learned}
-- {What made the challenge click}
+- Inspect all the given files first
+- Keep an eye on silly “typos” in programming syntax.
 
 ## References
-- {Docs, papers, other writeups that helped, with links}
-- Thanks to {author} for the challenge and {teammates} for {help}.
+- NO AI & NO GOOGLING REAL
+- Tysm for the template and guide from (https://ctf7.com/learn/how-to-write-a-ctf-writeup/#portfolio) for writing this write-up.
