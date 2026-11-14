@@ -1,6 +1,6 @@
-# CyLab Security Academy (formerly picoCTF) | Write-ups & Practices as of November 2026
+# CyLab Security Academy (formerly picoCTF) & PortSwinger Web Security Academy | Write-ups & Practices as of November 2026
 
-Welcome to my repository dedicated to cybersecurity write-ups completed as part of the **CyLab Security Academy** curriculum. This repository will hopefully serve as a portfolio documenting my hands-on learning, technical skill growth, and analytical problem-solving journey in CTFs or cybersecurity.
+Welcome to my repository dedicated to cybersecurity write-ups completed as part of the **CyLab Security Academy** and **PortSwinger Web Security Academy** curriculum. This repository will hopefully serve as a portfolio documenting my hands-on learning, technical skill growth, and analytical problem-solving journey in CTFs or cybersecurity.
 
 ## 📝 About the Write-ups
 
@@ -8,7 +8,7 @@ The write-ups are structured to reflect professional reporting and technical com
 
 ## ⚠️ Ethical Disclaimer
 
-All materials, scripts, and write-ups contained within this repository are created strictly for **educational purposes**, authorized training exercises within the CyLab Security Academy, and continuous professional development.
+All materials, scripts, and write-ups contained within this repository are created strictly for **educational purposes**, authorized training exercises within the CyLab Security Academy and PortSwinger labs, and continuous professional development.
 
 ---
 
